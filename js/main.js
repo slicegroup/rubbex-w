@@ -46,8 +46,44 @@ $(window).on('load', function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
+	$('.miniaturas').click(function() {
+	
+		var bm = $(this).attr('style')
+		$('#prueba').attr('style', bm)
+  
+	});
+
+				 
+	// $(function(){
+    //     $(window).scroll(function(){
+	// 		if (screen.width >= 600) {
+    //         if ($(window).scrollTop() > 30)
+    //         {
+	// 			$("#caja").fadeIn();
+				
+	// 			$(".navbar").addClass("nav-s");
+    //         }
+    //         else
+    //         { 
+    //             $("#caja").fadeIn();
+	// 			$(".navbar").removeClass("nav-s");
+    //         }
+	// 		}
+    //     });
+	// 	});	
 
 
+	// $(".miniaturas").click(function() {
+		// var miniatura = $(this).attr("miniatura");
+	
+	// 	var first = $('.miniaturas').first()
+	// 	$(first).attr('style')
+  
+	// 	$('#prueba').atrr('style', first)
+	// 	console.log();
+	// //   });
+
+	 
 
 	/*------------------
 		Portfolio
@@ -110,6 +146,26 @@ $(window).on('load', function() {
 // 	slidesToScroll: 3
 //   });
 
+$('.slider-for').slick({
+	slidesToShow: 1,
+	// autoplay:true,
+	slidesToScroll: 1,
+	arrows: false,
+	fade: true,
+	asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+	slidesToShow: 5.8,
+	slidesToScroll: 1,
+	asNavFor: '.slider-for',
+	dots: true,
+	focusOnSelect: true,
+	autoplay:true,
+  });
+ 
+// img miniatura
+
 
 
 })(jQuery);
+

@@ -30,12 +30,16 @@
 }
 
 /*rubbex inicio*/
-
+body{
+	overflow-x: hidden;
+}
 html,
 body {
 	height: 100%;
 	font-family: 'ogonek', sans-serif;
 	-webkit-font-smoothing: antialiased;
+
+	
 	
 }
 
@@ -219,6 +223,16 @@ ol {
 .tab-element .nav-tabs {
 	border-bottom: none;
 	margin-bottom: 25px;
+}
+.nav-s{
+	background:#fff;
+	
+}
+.fixed-top {
+	position: absolute;
+}
+.quit{
+	background: transparent;
 }
 
 .tab-element .nav-item {
@@ -468,17 +482,18 @@ ol {
 
 .portfolio-gallery:before,
 .portfolio-gallery:after {
-	position: absolute;
-	content: "";
-	left: 0;
-	top: -100px;
-	width: 459px;
-	height: 590px;
-	background-image: url("../img/logos/purple.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
+    position: absolute;
+    content: "";
+    left: 96px;
+    top: -125px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/logos/purple.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
 	z-index: -1;
-	opacity: 0.1; 
+	opacity: 0.1;
+
 }
 
 .portfolio-gallery:after {
@@ -592,6 +607,7 @@ display: flex;
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
 	position: relative;
+	margin-bottom: 100px;
 }
 .titulos::before{
 	content: "";
@@ -613,6 +629,10 @@ display: flex;
 .shop-item {
 	text-align: center;
 	margin-bottom: 33px;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
 
 
@@ -640,34 +660,161 @@ display: flex;
 .shop-item img{
 	width: 100%;
     height:315px;
-    object-fit: cover;
+	object-fit: cover;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
 /* Footer section*/
+.footer-section{
+	position: relative;
+    background: #161616;
+}
+.footer-section .wave{  
+	width: 100%;
+    z-index: 9;
+	position: absolute;
+	top: -3px;
+  
+}
+.term  li a{
+	color:#fff;
+	list-style: none;
+    font-weight: 200;
+	font-size: 15px;
+	line-height: 2;
+}
+.term li a:hover{
+	border-bottom: 1px solid #d62766;
+	list-style: none;
+	color: #d62766;
+}
+.footer-section ul{
+	list-style: none;
+	margin: 0 20px;
+}
+.footer-section h2{
+	color: #fff;
+    font-size: 20px;
+    margin-top: 160px;
+    margin-bottom: 30px;
+}
 
+.group {
+    position: relative;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.group input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    background: transparent;
+}
+
+.group input:focus {
+    outline: none;
+}
+
+.group input:focus~label, .group input:valid~label {
+    top: -10px;
+    font-size: 14px;
+	color: #d62766;
+}
+
+.group label {
+    position: absolute;
+    color: #fff;
+    top: 12px;
+    left: 0;
+	transition: 0.2s ease all;
+	font-size: 13px;
+}
+.copy{
+	width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 102px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #d62766;
+    height: 2px;
+    transition: left 0.2s ease-out, right 0.2s ease-out;
+}
+
+input:focus~.bar:before {
+    left: 0;
+    right: 0;
+}
+.send{
+	background: #d62766;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+.send:hover{
+	background: #fdfdfd;
+    color: #d62766;
+}
+/* b
 .footer-section {
 	padding: 56px 62px;
 	    background: red;
 }
-.portfolio-item:hover::before{
-	/*  */
+/* .mask-shop{
+	position: absolute;
+    top: 0;
+	width: 100%;
+    height:315px;;
+	/* background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.9) 17.15%, rgba(210, 0, 153, 0.85952) 54.63%, rgba(185, 0, 188, 0.836851) 74.36%, #3f1f4dcf 100%); */
+	/* background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.38) 17.15%, rgba(210, 0, 153, 0.48) 54.63%, rgba(185, 0, 188, 0.42) 74.36%, #3f1f4d66 100%); */
 
+/*  */
+ .shop-item:hover::before{
+	content: "";
+    display: block;
+    width: 100%;
+	background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.38) 17.15%, rgba(210, 0, 153, 0.48) 54.63%, rgba(185, 0, 188, 0.42) 74.36%, #3f1f4d66 100%);
+
+	height: 315px;
+	position: absolute;
+	
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.shop-item:hover::after{
 	justify-content: center;
 	align-items: center;
 	color: #fff;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	
 font-weight: bold;
 font-family: 'Poppins', sans-serif;
+	content: "see more";
+    display: block;
+    width: 90%;
+	MARGIN: 50% 0;
+	height: 315px;
+	position: absolute;
+	top: 0;
 
-display: flex;
-	content: " unique erotic experience.";
-    width: 100%;
-    height: 100%;
-	background: linear-gradient(153.27deg, rgba(255, 0, 92, 0.9) 17.15%, rgba(210, 0, 153, 0.85952) 54.63%, rgba(185, 0, 188, 0.836851) 74.36%, rgba(156, 0, 228, 0.81) 100%);
-	opacity: .8;
-	transition: all .1s ease-in-out
-}
+} 
 
 /* ----------------
 		Responsive
@@ -1038,3 +1185,98 @@ display: flex;
 		height: 65px;
 	}
 }
+
+
+/* slider */
+.img-best{
+	width: 75%;
+	height: 550px;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+.main {
+	font-family:Arial;
+	 /* width:50%; */
+	 display:block;
+	margin:0 auto;
+	/* background: red; */
+	position: relative;
+  }
+  .miniaturas{
+	width: 150px;
+    height: 200px;
+    background-size: cover!important;
+    background-position: center!important;
+  }
+  #prueba{
+	/* background: rebeccapurple; */
+    width: 170px!important;
+    height: 260px;
+    background-size: cover!important;
+    background-position: center!important;
+    position: absolute;
+    bottom: 0px;
+    right: 305px;
+    z-index: 2;
+    border-right: 7px solid #fff;
+    border-top: 7px solid #fff;
+  }
+  .slider-nav{
+	position: absolute;
+	bottom: -7px;
+  }
+  .slick-track {
+
+	margin-right: 300px;
+  }
+  .space{
+	margin: 150px 0;
+  }
+
+  .title-best{
+	font-family: 'Poppins', sans-serif!important;
+  color: #000;
+  margin: 65px 0;
+  }
+  .best h3 {
+	font-weight: 700;
+margin-bottom: 10px;
+text-transform: uppercase;
+
+  }
+  .best p{
+	font-size: 15px;
+	padding: 25px 0;
+  }
+  .best span{
+	  color: #d62766;
+	  
+  }
+  .best a{
+	  color:#Fff;
+	  background: #d62766;
+	  padding: 9px 10px;
+	  font-size: 12px;
+	  border-radius: 5px;
+  }
+  .best a:hover{
+	color:#d62766;
+	background: #fff;
+	
+  }
+  .action{
+	display:block;
+	margin:100px auto;
+	width:100%;
+	text-align:center;
+  }
+  .action a {
+	display:inline-block;
+	padding:5px 10px; 
+	background:#f30;
+	color:#fff;
+	text-decoration:none;
+  }
+  .action a:hover{
+	background:#000;
+  }
