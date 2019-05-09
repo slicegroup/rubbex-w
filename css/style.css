@@ -74,7 +74,12 @@ ol {
 	padding: 0;
 	margin: 0;
 }
-
+h1,h2,h3{
+	font-family: 'ogonek'!important;
+}
+p,span,a{
+	font-family: 'Poppins', sans-serif!important;
+}
 /* logo */
 
 
@@ -219,6 +224,13 @@ ol {
 }
 
 /* Tab */
+.nav-s .site-logo img {
+	width: 120px;
+}
+.nav-s .fixed-top {
+	padding: 0 10rem!important;
+	top: 0px;
+}
 
 .tab-element .nav-tabs {
 	border-bottom: none;
@@ -247,6 +259,9 @@ ol {
 }
 .fixed-top {
 	padding: 0px 10rem;
+}
+.nav-s .bx:hover {
+	color: #d62766;
 }
 .logo-bg{
 	display: initial!important;
@@ -355,6 +370,79 @@ ol {
 
 /* search model */
 
+
+.flexbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search > h3 {
+  font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #0091c2;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+  box-shadow: 1px 0 #0091c2;
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  box-shadow: 0 1px #0091c2;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.search > div > input::-ms-placeholder {
+  color: #efefef;
+}
+
+.search > div > input::-ms-input-placeholder {
+  color: #efefef;
+}
+
+.search > div > input:focus,
+.search > div > input:valid {
+  width: 250px;
+}
+
 .search-model {
 	display: none;
 	position: fixed;
@@ -405,8 +493,8 @@ ol {
     width: 100%;
     height: 100vh;
 	/* background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.9) 17.15%, rgba(210, 0, 153, 0.85952) 54.63%, rgba(185, 0, 188, 0.836851) 74.36%, #3f1f4dcf 100%); */
-	background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.38) 17.15%, rgba(210, 0, 153, 0.48) 54.63%, rgba(185, 0, 188, 0.42) 74.36%, #3f1f4d66 100%);
-
+	background: -webkit-linear-gradient(rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
+	background: linear-gradient(-30deg, rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
 }
 .nav-link{
 	color: #fff;
@@ -424,7 +512,7 @@ ol {
 }
 
 .site-logo img{
-    width: 150px;
+	width: 200px;
     margin: -48px 0;
 }*
 
@@ -484,7 +572,7 @@ ol {
 .titulo{
 	position: absolute;
     color: #Fff;
-	top: 50%;
+	top: 47%;
 	margin: 0 140px;
 }
 .titulo h1{
@@ -587,8 +675,8 @@ display: flex;
 	content: " unique erotic experience.";
     width: 100%;
     height: 100%;
-	background: linear-gradient(153.27deg, rgba(255, 0, 92, 0.9) 17.15%, rgba(210, 0, 153, 0.85952) 54.63%, rgba(185, 0, 188, 0.836851) 74.36%, rgba(156, 0, 228, 0.81) 100%);
-	opacity: .8;
+    background: -webkit-linear-gradient(rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
+    background: linear-gradient(-30deg, rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));	;
 	transition: all .1s ease-in-out
 }
 .portfolio-item:hover .portfolio-view {
@@ -722,7 +810,7 @@ display: flex;
 }
 .footer-section h2{
 	color: #fff;
-    font-size: 20px;
+	font-size: 25px;
 
     margin-bottom: 30px;
 }
@@ -814,16 +902,22 @@ input:focus~.bar:before {
 
 /*  */
  .shop-item:hover::before{
-	content: "";
-    display: block;
-    width: 100%;
-	background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.38) 17.15%, rgba(210, 0, 153, 0.48) 54.63%, rgba(185, 0, 188, 0.42) 74.36%, #3f1f4d66 100%);
-
+	content: "See more";
+	display: block;
+	width: 100%;
+	background: -webkit-linear-gradient(rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
+	background: linear-gradient(-30deg, rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
 	height: 315px;
 	position: absolute;
-	
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 .shop-item:hover::after{
 	justify-content: center;
@@ -847,17 +941,18 @@ font-family: 'Poppins', sans-serif;
 /* slider */
 .hott-section:after
 {
-    position: absolute;
-    content: "";
+	position: absolute;
+	content: "";
 	left: 96px;
-	top: 860px;
-    width: 100%;
-    height: 500px;
-    background-image: url(../img/logos/purple.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
+	top: 600px;
+	width: 100%;
+	height: 500px;
+	background-image: url(../img/logos/purple.svg);
+	background-repeat: no-repeat;
+	background-size: 30%;
 	z-index: -1;
 	opacity: 0.1;
+	transform: rotate(-25deg);
 
 }
 .img-best{
@@ -876,7 +971,7 @@ font-family: 'Poppins', sans-serif;
   }
   .miniaturas{
 	width: 150px;
-	height: 150px;
+	height: 165px;
     background-size: cover!important;
 	
 		cursor: pointer;
@@ -912,9 +1007,9 @@ font-family: 'Poppins', sans-serif;
     content: "";
     display: block;
 		width: 150px;
-    height: 150px;
-    background: linear-gradient(153.27deg, rgba(214, 39, 102, 0.38) 17.15%, rgba(210, 0, 153, 0.48) 54.63%, rgba(185, 0, 188, 0.42) 74.36%, #3f1f4d66 100%);
-
+  	height: 165px;
+    background: -webkit-linear-gradient(rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
+    background: linear-gradient(-30deg, rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
     position: absolute;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
@@ -928,7 +1023,7 @@ font-family: 'Poppins', sans-serif;
   .best h3 {
 	font-weight: 700;
 margin-bottom: 10px;
-text-transform: uppercase;
+font-size: 35px;
 
   }
   .best p{
@@ -942,7 +1037,7 @@ text-transform: uppercase;
   .best a{
 	  color:#Fff;
 	  background: #d62766;
-	  padding: 9px 10px;
+	font-weight: 600;
 	  font-size: 12px;
 	  border-radius: 5px;
   }
@@ -987,15 +1082,19 @@ text-transform: uppercase;
   *:after {
 	z-index: -1;
   }
-  
+  .best .btns {
+
+    display: initial;
+}
 
   
   .btns a {
 	text-decoration: none;
-
+	font-weight: 800;
 	line-height: 40px;
 	color:#d62766;
 	font-size: 12px;
+	font-family: 'ogonek'!important;
   }
   
   .centerer {
@@ -1058,7 +1157,7 @@ text-transform: uppercase;
 	color: #fff;
 }
 .content-doll p{
-	
+	font-weight: 800;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1137,3 +1236,7 @@ text-transform: uppercase;
 
 
 
+#eapps-instagram-feed-1 .eapps-instagram-feed-posts-grid-load-more {
+	background: rgb(56, 151, 240);
+	display: none!important;
+}
