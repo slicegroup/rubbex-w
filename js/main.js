@@ -185,6 +185,8 @@ $(function() {
     });
   $('[href=#]').click(function(){return false});
 });
-
+setTimeout(function () {
+  $('#eapps-instagram-feed-1').find('a').last().css('display', 'none')
+}, 1500)
 })(jQuery);
 
