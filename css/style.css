@@ -3,14 +3,7 @@
 
 @font-face {
 	font-family: 'ogonek';
-	src: url("../fonts/Ogonek Light.ttf") format("ttf"), url("../fonts/Ogonek Light.ttf") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'ogonek';
-	src: url("../fonts/FuturaLT-Book.woff2") format("ttf"), url("../fonts/FuturaLT-Book.woff") format("woff");
+	src: url("../fonts/Ogonek\ Heavy.ttf") format("ttf"), url("../fonts/Ogonek\ Heavy.ttf") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
