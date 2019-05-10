@@ -65,7 +65,17 @@
 							  <a class="nav-link" href="#">Help & Info</a>
 							</li>
 							<li class="nav-item" style="margin-left: 20px;">
-							   <a class="nav-link" href="#"><i class='bx bx-search-alt search-switch'  ></i></a>
+							   <a class="nav-link" href="#">
+					
+												<div class="search ">
+											
+													<div class="">
+														<input type="text" placeholder="Search . . ." required>
+													</div>
+									
+											</div>
+									
+								</a>
 							 </li>
 							 <li class="nav-item">
 								<a class="nav-link" href="#"><i class='bx bx-user'  ></i></a>
@@ -468,14 +478,14 @@
 
 
 	<!-- Search model -->
-	<div class="search-model">
+	<!-- <div class="search-model">
 		<div class="h-100 d-flex align-items-center justify-content-center">
 			<div class="search-close-switch">+</div>
 			<form class="search-model-form">
 				<input type="text" id="search-input" placeholder="Search here.....">
 			</form>
 		</div>
-	</div>
+	</div> -->
 	<!-- Search model end -->
 
 
@@ -501,6 +511,10 @@
 
 	 <script>
 		new WOW().init();
+
+		setTimeout(function () {
+  $('#eapps-instagram-feed').find('a').last().css('display', 'none')
+}, 1500)
 		</script>
 	</body>
 </html>
