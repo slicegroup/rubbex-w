@@ -11,8 +11,85 @@
 } */
 
 /* Medium screen : 992px. */
+@media only screen and (min-width:2560px) and (max-width: 3000px){
+	.banner .wave {
+		width: 100%;
+		margin-top: -252px;
+	}
+	.img-best {
+		width: 100%;
+		height: 900px;
+	}
+	.miniaturas {
+		width: 150px;
+		height: 200px;
+	}
+	.miniaturas:hover::before {
+		height: 200px;
+	}
+	#prueba {
+
+		right: 464px;
+	}
+	.best h3 {
+
+		font-size: 40px;
+	}
+	.best p {
+		font-size: 25px;
+	
+	}
+	.titulos {
+		font-size: 65px;
+	}
+	.btns a {
+	
+		font-size: 16px;
+	}
+	.titulos::before {
+	
+		height: 48px;
+	}
+	.site-logo img {
+		width: 300px;
+	}
+	.nav-link {
+		color: #fff;
+		font-size: 30px;
+	}
+	.search > div:after {
+
+		top: 33px;
+		right: -2px;
+	}
+	.titulo h1 {
+		font-weight: 600;
+		font-size: 50px;
+	}
+	.nav-s .site-logo img {
+		width: 200px;
+	}
+	.fixed-top {
+		padding: 15px 10rem;
+	}
+	.hott-section:after {
+		position: absolute;
+		content: "";
+		left: 550px;
+		top: 900px;
+		background-size: 20%;
+	}
+	.footer-section {
+		padding: 270px 0 0;
+	}
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.title-best {
+	
+		margin: 40px 0;
+	}
+
     .banner .wave {
         width: 100%;
         margin-top: -96px;
@@ -46,9 +123,11 @@
 	}
 	.portfolio-gallery:before,
 	.portfolio-gallery:after {
-		top: -30px;
-		width: 259px;
-		height: 390px;
+	    top: -42px;
+    width: 259px;
+    height: 390px;
+    left: 223px;
+    background-size: 95%;
 	}
 	.portfolio-gallery:after {
 		top: auto;
@@ -72,6 +151,34 @@
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.best{
+	overflow: hidden;
+}
+#prueba{
+	display: none;
+}
+.img-best {
+	width: 100%;
+}
+.title-best {
+    font-family: 'Poppins', sans-serif!important;
+    color: #000;
+    margin: 20px 0;
+}
+.group input {
+
+	width: 200px;
+}
+.bar {
+	width: 200px;
+}
+.footer-section h2 {
+    color: #fff;
+	font-size: 21px;
+}
+
+
 
 
   
@@ -311,6 +418,7 @@
 	}
 	.footer-section {
 		text-align: center;
+		padding: 49px 0 0;
 	}
 	.footer-contact-list {
 		margin-bottom: 50px;
@@ -362,6 +470,16 @@
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+
+	.footer-section .col-md-4:nth-child(2){
+		display: none;
+	}
+	.footer-section .col-md-4:nth-child(3){
+		display: none;
+	}
+	.space-s {
+		margin: 0;
+	}
 	.hero-slider-item .hs-content h2 {
 		font-size: 45px;
 	}
@@ -394,7 +512,7 @@
         display: none;
     }
     .footer-section .wave {
-      
+	    top: -50px;
         position: relative;
     }
     .prueba{
