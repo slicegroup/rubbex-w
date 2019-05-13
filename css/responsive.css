@@ -12,6 +12,10 @@
 
 /* Medium screen : 992px. */
 @media only screen and (min-width:2560px) and (max-width: 3000px){
+	.ml-auto {
+		margin-left: 900px!important;
+	}
+
 	.banner .wave {
 		width: 100%;
 		margin-top: -252px;
@@ -78,6 +82,7 @@
 		left: 550px;
 		top: 900px;
 		background-size: 20%;
+		width: 78%;
 	}
 	.footer-section {
 		padding: 270px 0 0;
@@ -85,6 +90,22 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#eapps-instagram-feed-1 {
+		width: 220px!important;
+	}
+	.hott-section:after {
+
+		width: 80%;
+	}
+	.fixed-top {
+		padding: 0px 1rem;
+		position: absolute;
+	}
+	
+.titulo {
+ 
+    margin: 0;
+}
 	.title-best {
 	
 		margin: 40px 0;
@@ -151,7 +172,16 @@
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+	.titulo {
+	
+		margin: 0;
+	}
+	#eapps-instagram-feed-1 {
+		width: 220px!important;
+	}
+	.hott-section:after{
+		display: none;
+	}
 .best{
 	overflow: hidden;
 }
@@ -170,6 +200,7 @@
 
 	width: 200px;
 }
+
 .bar {
 	width: 200px;
 }
@@ -283,7 +314,7 @@
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
-
+	
 	.header-section {
 		padding: 8px 0;
 		padding-right: 90px;
@@ -470,6 +501,7 @@
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+
 	.logo-w{
 		display: none;
 	}
@@ -525,7 +557,7 @@
 		color: black;
 	}
     .fixed-top {
-		padding: 12px;
+	    padding: 5px 20px;
 	}
 	.nav-link {
 		color:#e60065;
