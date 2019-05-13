@@ -470,6 +470,27 @@
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+	.logo-w{
+		display: none;
+	}
+	nav{
+		background: #fff;
+	}
+	.two{
+		display:initial;
+	}
+	.site-logo img {
+		width: 100px;
+	
+	}
+	.logo-w {
+		margin: 15px!important;
+	}
+	.titulo h1 ,
+	.titulo h3 {
+		font-weight: 600;
+		font-size: 22px;
+	}
 
 	.footer-section .col-md-4:nth-child(2){
 		display: none;
@@ -494,10 +515,21 @@
 	.hero-slider .owl-nav button.owl-next {
 		width: 65px;
 		height: 65px;
-    }
+	}
+	.bx {
+		color: #fff;
+		font-size: 35px;
+	}
+	.bx-menu-alt-right:before {
+		content: "\ea94";
+		color: black;
+	}
     .fixed-top {
-        padding: 0;
-    }
+		padding: 12px;
+	}
+	.nav-link {
+		color:#e60065;
+	}
     .titulo {
         position: absolute;
         color: #Fff;
