@@ -26,7 +26,8 @@
                 </div>
                 <div class="col-md-4">
                     <h2>Contact Us</h2>
-                    <form>
+                    <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 5, 'title' => false, 'description' => false ) ); ?>
+                    <!-- <form>
                         <div class="group">
                             <input type="text" required>
                             <span class="highlight"></span>
@@ -48,7 +49,7 @@
                         <div class="btns animated wow fadeInUp " data-wow-duration="5s">
                             <a class="btn-1" href="#">Send</a>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="col-md-4">
                     <h2>Follow us on instagram</h2>

@@ -4,10 +4,10 @@
 
     <meta charset="<?php bloginfo('charset'); ?>" />
     <title><?php bloginfo('name'); ?></title>
-    <meta name="description" content="rubbex web">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="keywords" content="dolls,doll">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" rel="shortcut icon" />
     <!-- Favicon 
 	<link href="" rel="shortcut icon"/>-->
     <!-- Stylesheets -->
@@ -37,8 +37,8 @@
         <header class="header-sen">
             <nav class="navbar navbar-expand-lg fixed-top ">
                 <a href="index.html" id="change" class="site-logo">
-								<img src="img/logos/Logo-white.svg" class="logo-w" alt="">
-								<img src="img/logos/logo-p.svg" class=" two" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/assets/img/logos/Logo-white.svg" class="logo-w" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/assets/img/logos/logo-p.svg" class=" two" alt="">
 							</a>
                 <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                        
@@ -74,10 +74,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class='bx bx-user'  ></i></a>
+                            <a class="nav-link" href="<?php bloginfo('url') ?>/my-account"><i class='bx bx-user'  ></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">	<i class='bx bx-cart' '  ></i></a>
+                            <a class="nav-link" href="<?php bloginfo('url') ?>/cart">	<i class='bx bx-cart' '  ></i></a>
                         </li>
                         <!-- <li class="nav-item dropdown">
 							  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>

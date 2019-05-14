@@ -812,39 +812,61 @@ display: flex;
     margin-bottom: 30px;
 }
 
-.group {
-    position: relative;
-    width: 300px;
-    margin-bottom: 20px;
+#frm_form_5_container {
+    position: relative !important;
+    width: 300px!important;
+    margin-bottom: 20px!important;
 }
 
-.group input {
-    border: none;
-    border-bottom: 1px solid #fff;
-    padding: 10px;
-    display: block;
-    width: 300px;
-    background: transparent;
+#frm_form_5_container input[type="text"], 
+#frm_form_5_container input[type="email"],
+#frm_form_5_container textarea{
+    border: none!important;
+    border-bottom: 1px solid #fff!important;
+    padding: 10px!important;
+    display: block!important;
+    width: 300px!important;
+    background: transparent!important;
 }
 
-.group input:focus {
-    outline: none;
+#frm_form_5_container input:focus, #frm_form_5_container textarea:focus{
+    outline: none!important;
 }
 
-.group input:focus~label, .group input:valid~label {
-    top: -10px;
-    font-size: 14px;
-	color: #d62766;
+#frm_form_5_container input:focus~label, #frm_form_5_container input:valid~label {
+    top: -10px!important;
+    font-size: 14px!important;
+	color: #d62766!important;
 }
 
-.group label {
-    position: absolute;
-    color: #fff;
-    top: 12px;
-    left: 0;
-	transition: 0.2s ease all;
-	font-size: 13px;
+#frm_form_5_container label {
+    position: absolute!important;
+    color: #fff!important;
+    top: 12px!important;
+    left: 0!important;
+	transition: 0.2s ease all!important;
+	font-size: 13px!important;
+
 }
+
+.frm_button_submit{
+
+    background: transparent !important;
+	position: relative!important;
+    display: block!important;
+    overflow: hidden!important;
+    padding: 0px 40px!important;
+    text-transform: uppercase!important;
+    border: 1px solid #d62766!important;
+    border-radius: 5px!important;
+    text-decoration: none !important;
+    font-weight: 800 !important;
+    line-height: 40px !important;
+    color: white !important;
+    font-size: 12px !important;
+    font-family: 'ogonek'!important !important;
+}
+
 .copy{
 	width: 100%;
     color: #fff;
