@@ -6,8 +6,9 @@
                  <?php $loop = new WP_Query( $args ); ?>
 
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                    <a href="<?php the_permalink() ?>">
+                   
                 <div class="col-lg-3 col-sm-6 animated wow fadeInLeft" data-wow-duration="3s">
+                <a href="<?php the_permalink() ?>">
                     <div class="shop-item">
                         <div class="mask-shop"></div>
                         <!-- <i class='bx bxs-show'></i> -->
@@ -20,8 +21,10 @@
                         </div>
 
                     </div>
+                    </a>
                 </div>
-                </a>
+            
+                
                   <?php endwhile; ?>
               
             </div>
