@@ -38,3 +38,9 @@
   color: #e60065;
   font-size: 25px;
 }
+.price{
+  font-size: 21px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #161616;
+}

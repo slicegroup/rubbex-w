@@ -35,7 +35,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="container">
+
 <div class="row info-doll">
       <div class="col-md-6">
           <div class="content-img" style="background:url(https://lumidolls.com/222-home_default/either-sexdoll.jpg)">
@@ -48,7 +48,6 @@ if ( post_password_required() ) {
           </div>
       </div>
     </div>
-</div>
 
 
 
