@@ -70,7 +70,7 @@ function Banner() {
 		'label'                 => __( 'Banner', 'apk' ),
 		'description'           => __( 'Post Type Description', 'apk' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array(  ),
 		'hierarchical'          => false,
 		'public'                => true,

@@ -7,7 +7,7 @@
                 </div>
                 <div class="portfolio-item --disable">
                 </div>
-                 <?php $args = array( 'post_type' => 'product', 'offset' => 1); ?>
+                 <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 0); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInLeft" data-wow-duration="3s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -15,7 +15,7 @@
                 </div>
                 <?php endwhile; ?>
 
-               <?php $args = array( 'post_type' => 'product', 'offset' => 2); ?>
+               <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 1); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item --big set-bg animated wow fadeInLeft" data-wow-duration="2s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -23,7 +23,7 @@
                 </div>
                 <?php endwhile; ?>
 
-               <?php $args = array( 'post_type' => 'product', 'offset' => 3 ); ?>
+               <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 2 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                    
@@ -32,7 +32,7 @@
                 </div>
                 <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 4 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 3 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInRight" data-wow-duration="2s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -40,7 +40,7 @@
                 </div>
                  <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 5 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 4 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInRight" data-wow-duration="3s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -48,7 +48,7 @@
                 </div>
                  <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 6 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 5 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                    <div class="portfolio-item set-bg animated wow fadeInRight" data-wow-duration="3s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -56,7 +56,7 @@
                 </div>
                  <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 7 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 6 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInRight" data-wow-duration="2s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -64,7 +64,7 @@
                 </div>
                  <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 8 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 7 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInRight" data-wow-duration="3s" data-wow-duration="2s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -72,7 +72,7 @@
                 </div>
                  <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 9 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 8 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInLeft" data-wow-duration="2s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -80,7 +80,7 @@
                 </div>
                  <?php endwhile; ?>
 
-                  <?php $args = array( 'post_type' => 'product', 'offset' => 10 ); ?>
+                  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'offset' => 9 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                 <div class="portfolio-item set-bg animated wow fadeInLeft" data-wow-duration="3s" data-setbg="<?php echo get_the_post_thumbnail_url(); ?>">
