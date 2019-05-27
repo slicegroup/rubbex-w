@@ -1,0 +1,46 @@
+.price-firts .woocommerce-Price-amount{
+  display: block!important;
+}
+#main{
+  margin-top: 150px!important;
+}
+.header-2 .nav-link {
+  color: #161616!important;
+}
+.header-2 .site-logo img {
+  width: 155px;
+}
+.header-2 .logo-w {
+  margin: 35px 0!important;
+}
+.header-2 .bx {
+  color: #161616;
+}
+.header-2 .bx:hover {
+  color: #d62766;
+}
+.header-2 .nav-link:hover {
+  color: #d62766!important;
+}
+.header-2  ul{
+  align-items: center!important;
+}
+/* img product */
+.content-img{
+  background-size: 100%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+}
+.info-doll h2{
+  color: #e60065;
+  font-size: 25px;
+}
+.price{
+  font-size: 21px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #161616;
+}

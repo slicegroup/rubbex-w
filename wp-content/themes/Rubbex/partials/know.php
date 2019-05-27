@@ -1,5 +1,5 @@
 <section class="shop-section space-s">
-        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Know Us</h1>
+        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Most Requested Companions</h1>
         <div class="container">
             <div class="row">
                 <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 3 ); ?>
@@ -16,7 +16,9 @@
 
                         <div class="content-doll add-card">
                             <p class="mr-auto"><?php the_title(); ?></p>
-                            <p class="ml-auto"><?php echo $product->get_price_html(); ?></p>
+                         <div class="price-firts">
+                         <p class="ml-auto"><?php echo $product->get_price_html(); ?></p>
+                         </div>
                             <!-- <span>158 cm</span> -->
                         </div>
 
