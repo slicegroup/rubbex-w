@@ -1,0 +1,6 @@
+2019-05-27T14:44:41+00:00 CRITICAL syntax error, unexpected '$post' (T_VARIABLE), expecting ',' or ')' in /var/www/html/Rubbex/wp-content/themes/Rubbex/partials/gallery.php on line 23
+
+2019-05-27T16:00:47+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /var/www/html/Rubbex/wp-content/themes/Rubbex/partials/hosttest.php on line 29
+
+2019-05-27T17:57:31+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/Rubbex/wp-content/themes/Rubbex/partials/hosttest.php on line 51
+
