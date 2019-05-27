@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying product content in the single-product.php template
  *
@@ -24,6 +25,8 @@ global $product;
  *
  * @hooked wc_print_notices - 10
  */
+
+get_template_part('partials/header-2'); 
 do_action( 'woocommerce_before_single_product' );
 
 if ( post_password_required() ) {
@@ -31,7 +34,25 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+
+<div class="container">
+<div class="row info-doll">
+      <div class="col-md-6">
+          <div class="content-img" style="background:url(https://lumidolls.com/222-home_default/either-sexdoll.jpg)">
+          </div>
+      </div>
+      <div class="col-md-6">
+          <h2>SUZANNE - SexDoll</h2>
+          <div class="price">
+					£500.00 £300.00
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="container" id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
 	/**

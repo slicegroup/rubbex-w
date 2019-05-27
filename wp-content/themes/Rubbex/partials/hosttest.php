@@ -1,6 +1,6 @@
 
     <section class="hott-section space">
-        <h1 class="titulos cssanimation leFadeIn sequence " data-wow-iteration="2">Hottest</h1>
+        <h1 class="titulos cssanimation leFadeIn sequence " data-wow-iteration="2">Sexiest Companions</h1>
         <div class="best">
             <div class="main container">
                 <div class="active" id="prueba">

@@ -1,5 +1,5 @@
 <section class="shop-section space-s">
-        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Know Us</h1>
+        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Most Requested Companions</h1>
         <div class="container">
             <div class="row">
                 <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 3 ); ?>

@@ -1,5 +1,5 @@
  <section class="space ">
-        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Best gallery</h1>
+        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Build Your Perfect Companion</h1>
         <div class="portfolio-section">
             <div class="portfolio-gallery">
                 <div class="portfolio-item set-bg animated wow fadeInLeft" data-wow-duration="2s" data-setbg="https://lumidolls.com/222-home_default/either-sexdoll.jpg">
