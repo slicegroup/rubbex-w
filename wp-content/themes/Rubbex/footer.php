@@ -101,7 +101,7 @@
     <script>
         new WOW().init();
         
-        		setTimeout(function () {
+                setTimeout(function () {
           $('#eapps-instagram-feed').find('a').last().css('display', 'none')
         }, 1500)
     </script>

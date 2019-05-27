@@ -1,4 +1,22 @@
 <?php 
+/*
+function adp_load_styles_scripts() {
+  //JS
+  wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array ( 'jquery' ), 1.1, true);
+   wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'offcanvas', get_template_directory_uri() . '/assets/js/offcanvas.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array ( 'jquery' ), 1.1, true);
+}
+add_action('wp_enqueue_scripts', 'adp_load_styles_scripts');*/
+// Sustituimos la versión de jQuery local por la del CDN de Google
+add_action('wp_enqueue_scripts', 'mitema_enqueue_scripts');
+function mitema_enqueue_scripts() {
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"), false, '1.7.1');
+    wp_enqueue_script('jquery');
+    }
+
 
 the_post_thumbnail();
 the_post_thumbnail('thumbnail');       // Thumbnail (por defecto 150px x 150px max)
