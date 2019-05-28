@@ -8,7 +8,7 @@
 
         <div class="titulo container">
             <h1 class="cssanimation leFadeIn sequence "><?php the_title(); ?></h1>
-            <h3 class=""><?php the_title(); ?></h3>
+            <h3 class=""><?php the_content(); ?></h3>
         </div>
         </div>
         <img class="wave" src="<?php echo get_template_directory_uri();?>/assets/img/wave.svg" alt="">

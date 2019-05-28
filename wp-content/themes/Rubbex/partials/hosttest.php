@@ -5,9 +5,8 @@
             <div class="main container">
                 <div class="active" id="prueba">
 
-                    <!-- <div class="miniaturas"style="background:url(https://eldiariony.files.wordpress.com/2017/03/aki-dolls1a1.jpg?quality=80&strip=all&strip=all)">
-			
-								</div> -->
+                   <!--   <div class="miniaturas"style="background:url(https://eldiariony.files.wordpress.com/2017/03/aki-dolls1a1.jpg?quality=80&strip=all&strip=all)">
+			         </div>  -->
                 </div>
                 <div class="slider slider-for">
                     <!-- slider -->
