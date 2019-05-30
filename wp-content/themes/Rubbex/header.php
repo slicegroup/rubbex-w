@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/woocomerce-style.css">
-
     <!-- <link rel="stylesheet" href="css/cssanimation.css"> -->
     <!-- animation -->
     <?php wp_head(); ?>
