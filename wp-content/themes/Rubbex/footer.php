@@ -97,7 +97,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/cssanimation-gsap.min.js"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-
     <script>
         new WOW().init();
         

@@ -35,7 +35,6 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="container">
 
 <div class="row info-doll">
 
@@ -43,22 +42,43 @@ if ( post_password_required() ) {
           <div class="content-img" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>)">
           </div>
       </div>
+      <!--col2-->
       <div class="col-md-6">
-          <h2><?php the_title(); ?></h2>
-          <div class="price">
-						<p class="">	<?php echo $product->get_price_html(); ?></p>
-					
+        <div>
+				<h2><?php the_title(); ?></h2>
+        <div class="price-detail">
+        <p class="">	<?php echo $product->get_price_html(); ?></p>
+          <div class="btns animated wow fadeInUp ml-auto" data-wow-duration="5s">
+            <a class="btn-1" href="#">Put me to your liking</a>
+          </div>
+        </div>
+        <!-- contemnt tkee contenido doll -->
+        <div class="take">
+          <p>
+           		<p><?php the_content(); ?></p>
+          </p>
 
-						<div class="btns animated wow fadeInUp " data-wow-duration="5s">
-                <a class="btn-1" href="#">Put me to your liking</a>
-             </div>
-					</div>
-					<p><?php the_content(); ?></p>
-				
+          <!-- btn -->
+          <div class="content-btn-detail">
+            <div class="btns animated wow fadeInUp btn-buy" data-wow-duration="5s">
+              <a class="btn-1 " href="#">Take me home</a>
+            </div>
+          </div>
+          <!-- bnt  -->
+        </div>
+        <!-- content tae-->
+        </div>
+     
       </div>
-    </div>
-</div>
-</div>
+        <!-- tabs -->
+				<section>
+	
+			</section>
+        <!-- end tabs -->
+    </div> <!--row-->
+  </div>
+
+
 
 
 
