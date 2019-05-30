@@ -1,7 +1,7 @@
 <div class="container">
         <header class="header-sen">
             <nav class="navbar navbar-expand-lg fixed-top header-2" style=" box-shadow: 0px 0px 9px #00000012!important;">
-                <a href="index.html" id="change" class="site-logo">
+                <a href="<?php bloginfo('url'); ?>" id="change" class="site-logo">
 								<img src="<?php echo get_template_directory_uri();?>/assets/img/logos/logo-p.svg"  class="logo-w" alt="" >
 								<img src="<?php echo get_template_directory_uri();?>/assets/img/logos/logo-p.svg" class=" two" alt="">
 							</a>

@@ -27,81 +27,44 @@ get_header( 'shop' );
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 do_action( 'woocommerce_before_main_content' );
-
+get_template_part('partials/header-2'); 
 ?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
 
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
-</header>
-<?php
-if ( woocommerce_product_loop() ) {
 
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action( 'woocommerce_before_shop_loop' );
+<section class="shop-section">
+        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Most Requested Companions</h1>
+        <div class="container">
+            <div class="row">
+                <?php $args = array( 'post_type' => 'product' ); ?>
+                 <?php $loop = new WP_Query( $args ); ?>
 
-	woocommerce_product_loop_start();
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                   
+                <div class="col-lg-3 col-sm-6 animated wow fadeInLeft" data-wow-duration="3s">
+                <a href="<?php the_permalink() ?>">
+                    <div class="shop-item">
+                        <div class="mask-shop"></div>
+                        <!-- <i class='bx bxs-show'></i> -->
+                        <?php the_post_thumbnail('medium'); ?>
 
-	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
-			the_post();
+                        <div class="content-doll add-card">
+                            <p class="mr-auto"><?php the_title(); ?></p>
+                         <div class="price-firts">
+                         <p class="ml-auto"><?php echo $product->get_price_html(); ?></p>
+                         </div>
+                            <!-- <span>158 cm</span> -->
+                        </div>
 
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 *
-			 * @hooked WC_Structured_Data::generate_product_data() - 10
-			 */
-			do_action( 'woocommerce_shop_loop' );
+                    </div>
+                    </a>
+                </div>
+            
+                
+                  <?php endwhile; ?>
+              
+            </div>
 
-			wc_get_template_part( 'content', 'product' );
-		}
-	}
+        </div>
+    </section>
 
-	woocommerce_product_loop_end();
-
-	/**
-	 * Hook: woocommerce_after_shop_loop.
-	 *
-	 * @hooked woocommerce_pagination - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop' );
-} else {
-	/**
-	 * Hook: woocommerce_no_products_found.
-	 *
-	 * @hooked wc_no_products_found - 10
-	 */
-	do_action( 'woocommerce_no_products_found' );
-}
-
-/**
- * Hook: woocommerce_after_main_content.
- *
- * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
- */
-do_action( 'woocommerce_after_main_content' );
-
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
-
-get_footer( 'shop' );
+<?php get_footer(); ?>
