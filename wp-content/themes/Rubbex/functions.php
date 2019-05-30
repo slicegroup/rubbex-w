@@ -183,4 +183,12 @@ function banner_advertising() {
 	register_post_type( 'advertising', $args );
 
 }
-add_action( 'init', 'banner_advertising', 0 );
+
+//Compatibilidad con galerías a partir de WooCommerce 3.0>
+add_action( 'after_setup_theme', 'yourtheme_setup' );
+
+function yourtheme_setup() {
+
+
+add_theme_support( 'wc-product-gallery-slider' );
+}
