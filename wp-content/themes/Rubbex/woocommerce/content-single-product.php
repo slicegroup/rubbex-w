@@ -35,6 +35,7 @@ if ( post_password_required() ) {
 }
 ?>
 
+<div class="container">
 
 <div class="row info-doll">
       <div class="col-md-6">
@@ -44,14 +45,23 @@ if ( post_password_required() ) {
       <div class="col-md-6">
           <h2>SUZANNE - SexDoll</h2>
           <div class="price">
-					£500.00 £300.00
-          </div>
+						<p class="">	£500.00 </p>
+						<p class="">	£300.00</p>
+
+						<div class="btns animated wow fadeInUp " data-wow-duration="5s">
+                <a class="btn-1" href="#">Put me to your liking</a>
+             </div>
+					</div>
+					<p>Hi, boys! My name is Suzanne and I’m from Martinique, an amazing island in the Caribbean Sea. I was born surrounded by palm trees and easy going people. We can say that despite moving to L.A. I kept much from my genuine personality.
+					Now, I live in the heart of this unbelievable city, where most of the world’s movies are made. As you can see in my pic, I like fantasy and Marvel heroes, above all, Wonder Woman. I have played a role in the movie; I can say one of my biggest dreams has come true. Can you say the same?</p>
+				
       </div>
     </div>
+</div>
+</div>
 
 
-
-<div class="container" id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<div  id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
 	/**
