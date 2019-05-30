@@ -37,7 +37,7 @@
     <div class="container">
         <header class="header-sen">
             <nav class="navbar navbar-expand-lg fixed-top ">
-                <a href="index.html" id="change" class="site-logo">
+                <a href="<?php bloginfo('url'); ?>" id="change" class="site-logo">
 								<img src="<?php echo get_template_directory_uri();?>/assets/img/logos/Logo-white.svg" class="logo-w" alt="">
 								<img src="<?php echo get_template_directory_uri();?>/assets/img/logos/logo-p.svg" class=" two" alt="">
 							</a>
@@ -62,7 +62,9 @@
                         <li class="nav-item" style="margin-left: 20px;">
                             <a class="nav-link damn-search 
                             " href="#">
-
+                            <form action="">
+                                
+                           
                             <div id="custom-search">
                                     <input type="text" name="search" class="search-query" placeholder="Search" />
                                     <button type="button">
@@ -70,7 +72,7 @@
                                     </button>
                                     <input type="submit" value="Submit" style="display: none;">
                                 </div>
-                                  
+                                  </form> 
 
                             </a>
                         </li>

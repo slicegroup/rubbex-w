@@ -1,26 +1,40 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<?php get_header(); ?>
 
+<section class="shop-section space-s">
+        <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Most Requested Companions</h1>
+        <div class="container">
+            <div class="row">
+                <?php $args = array( 'post_type' => 'product' ); ?>
+                 <?php $loop = new WP_Query( $args ); ?>
 
-get_header(); ?>
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                   
+                <div class="col-lg-3 col-sm-6 animated wow fadeInLeft" data-wow-duration="3s">
+                <a href="<?php the_permalink() ?>">
+                    <div class="shop-item">
+                        <div class="mask-shop"></div>
+                        <!-- <i class='bx bxs-show'></i> -->
+                        <?php the_post_thumbnail('medium'); ?>
 
-<div class="container" style="margin-top: 100px;">
-	<?php echo do_shortcode('[products  columns="4" orderby="popularity" class="quick-sale" on_sale="true" ]'); ?>
-</div><!-- .wrap -->
+                        <div class="content-doll add-card">
+                            <p class="mr-auto"><?php the_title(); ?></p>
+                         <div class="price-firts">
+                         <p class="ml-auto"><?php echo $product->get_price_html(); ?></p>
+                         </div>
+                            <!-- <span>158 cm</span> -->
+                        </div>
 
-<?php get_footer();
+                    </div>
+                    </a>
+                </div>
+            
+                
+                  <?php endwhile; ?>
+              
+            </div>
+
+        </div>
+    </section>
+
+<?php get_footer(); ?>
 

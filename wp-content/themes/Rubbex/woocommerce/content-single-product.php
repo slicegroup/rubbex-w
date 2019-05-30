@@ -36,19 +36,18 @@ if ( post_password_required() ) {
 ?>
 
 
-<div class="container">
-    <div class="row info-doll">
+<div class="row info-doll">
+
       <div class="col-md-6">
-        <div class="content-img" style="background:url(https://lumidolls.com/222-home_default/either-sexdoll.jpg)">
-        </div>
+          <div class="content-img" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>)">
+          </div>
       </div>
       <!--col2-->
       <div class="col-md-6">
         <div>
-            <h2>SUZANNE - SexDoll</h2>
+				<h2><?php the_title(); ?></h2>
         <div class="price-detail">
-          <p class=""> £500.00 </p>
-          <p class=""> £300.00</p>
+        <p class="">	<?php echo $product->get_price_html(); ?></p>
           <div class="btns animated wow fadeInUp ml-auto" data-wow-duration="5s">
             <a class="btn-1" href="#">Put me to your liking</a>
           </div>
@@ -56,12 +55,7 @@ if ( post_password_required() ) {
         <!-- contemnt tkee contenido doll -->
         <div class="take">
           <p>
-            Hello guys! I am a 23 year old Colombian girl. My friends call me Reyna because I am the queen of their
-            hearts. I was born in stunning Colombia full of colours and music. I am from the Pacific coast. We feel
-            thankful just to be alive and enjoy the sun and the sea every day. Would you like to become part of me?
-            I am very friendly, love to go out and dance and drink some cocktails; besides I like to be silent and
-            contemplate a nice view. I have time for party but I also need to be on my own. Are you a guy that wants to
-            be all the time with people? Would you be able to be just with me and enjoy it?
+           		<p><?php the_content(); ?></p>
           </p>
 
           <!-- btn -->
@@ -78,28 +72,21 @@ if ( post_password_required() ) {
       </div>
         <!-- tabs -->
 				<section>
-				<div class="tabs tabs-style-underline">
-					<nav>
-						<ul>
-							<li><a href="#section-underline-1" class="icon icon-home"><span>Home</span></a></li>
-							<li><a href="#section-underline-2" class="icon icon-gift"><span>Deals</span></a></li>
-							<li><a href="#section-underline-3" class="icon icon-upload"><span>Upload</span></a></li>
-							<li><a href="#section-underline-4" class="icon icon-coffee"><span>Work</span></a></li>
-							<li><a href="#section-underline-5" class="icon icon-config"><span>Settings</span></a></li>
-						</ul>
-					</nav>
-					<div class="content-wrap">
-						<section id="section-underline-1"><p>1</p></section>
-						<section id="section-underline-2"><p>2</p></section>
-						<section id="section-underline-3"><p>3</p></section>
-						<section id="section-underline-4"><p>4</p></section>
-						<section id="section-underline-5"><p>5</p></section>
-					</div><!-- /content -->
-				</div><!-- /tabs -->
+	
 			</section>
         <!-- end tabs -->
     </div> <!--row-->
   </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
