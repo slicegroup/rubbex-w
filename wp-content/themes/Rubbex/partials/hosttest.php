@@ -18,6 +18,7 @@
                             <div class="col-md-6">
                                 <div class="title-best animated wow fadInDown" data-wow-duration="2s">
                                     <div class="title-best ">
+                                        
                                         <h3 class=""><?php the_field( 'greeting' ); ?></h3>
                                         <span><?php the_field( 'motto' ); ?></span>
                                         <p><?php the_field( 'biography' ); ?></p>
