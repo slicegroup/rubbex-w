@@ -43,4 +43,29 @@
     font-weight: 600;
     margin: 15px 0;
     color: #161616;
+    display: inline-flex;
+
+}
+.price p:nth-child(2){
+text-decoration: line-through;
+    /* font-size: 15px; */
+    color: #161616db;
+    margin: 0 19px;
+    font-weight: 100;
+    opacity: .8;
+}
+.info-doll a{
+  background: #e60065;
+}
+.info-doll .btns a {
+  color: #ffffff;
+}
+.info-doll [class^="btn-"] {
+
+    margin: 0!important;
+    padding: 0 10px;
+}
+.info-doll .btns {
+
+    display: initial;
 }

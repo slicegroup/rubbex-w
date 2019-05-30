@@ -53,6 +53,7 @@ $(function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
+	
 	$('.miniaturas').click(function() {
 	
 		var bm = $(this).attr('style')

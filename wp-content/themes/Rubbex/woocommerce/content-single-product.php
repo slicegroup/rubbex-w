@@ -35,23 +35,43 @@ if ( post_password_required() ) {
 }
 ?>
 
+<div class="container">
 
 <div class="row info-doll">
+
       <div class="col-md-6">
-          <div class="content-img" style="background:url(https://lumidolls.com/222-home_default/either-sexdoll.jpg)">
+          <div class="content-img" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>)">
           </div>
       </div>
       <div class="col-md-6">
-          <h2>SUZANNE - SexDoll</h2>
+          <h2><?php the_title(); ?></h2>
           <div class="price">
-					£500.00 £300.00
-          </div>
+						<p class="">	<?php echo $product->get_price_html(); ?></p>
+					
+
+						<div class="btns animated wow fadeInUp " data-wow-duration="5s">
+                <a class="btn-1" href="#">Put me to your liking</a>
+             </div>
+					</div>
+					<p><?php the_content(); ?></p>
+				
       </div>
     </div>
+</div>
+</div>
 
 
 
-<div class="container" id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+
+
+
+
+
+
+
+
+
+<div  id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
 	/**

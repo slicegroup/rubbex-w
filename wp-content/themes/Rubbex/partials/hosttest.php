@@ -5,9 +5,8 @@
             <div class="main container">
                 <div class="active" id="prueba">
 
-                    <!-- <div class="miniaturas"style="background:url(https://eldiariony.files.wordpress.com/2017/03/aki-dolls1a1.jpg?quality=80&strip=all&strip=all)">
-			
-								</div> -->
+                   <!--   <div class="miniaturas"style="background:url(https://eldiariony.files.wordpress.com/2017/03/aki-dolls1a1.jpg?quality=80&strip=all&strip=all)">
+			         </div>  -->
                 </div>
                 <div class="slider slider-for">
                     <!-- slider -->
@@ -19,6 +18,7 @@
                             <div class="col-md-6">
                                 <div class="title-best animated wow fadInDown" data-wow-duration="2s">
                                     <div class="title-best ">
+                                        
                                         <h3 class=""><?php the_field( 'greeting' ); ?></h3>
                                         <span><?php the_field( 'motto' ); ?></span>
                                         <p><?php the_field( 'biography' ); ?></p>
