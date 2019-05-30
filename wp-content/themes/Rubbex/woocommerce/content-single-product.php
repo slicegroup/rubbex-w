@@ -34,10 +34,9 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-
+<div class="container">
 
 <div class="row info-doll">
-
       <div class="col-md-6">
           <div class="content-img" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>)">
           </div>
@@ -70,11 +69,78 @@ if ( post_password_required() ) {
         </div>
      
       </div>
-        <!-- tabs -->
-				<section>
-	
-			</section>
-        <!-- end tabs -->
+      <!-- Tabs -->
+<section id="tabs">
+	<div class="container">
+		<!-- <h6 class="section-title h1">Tabs</h6> -->
+		<div class="row">
+			<div class="col-xs-12 ">
+				<nav>
+					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-skin-tab" data-toggle="tab" href="#nav-skin" role="tab" aria-controls="nav-skin" aria-selected="true"> Skin tone</a>
+						<a class="nav-item nav-link" id="nav-face-tab" data-toggle="tab" href="#nav-face" role="tab" aria-controls="nav-face" aria-selected="false">Face</a>
+						<a class="nav-item nav-link" id="nav-hair-tab" data-toggle="tab" href="#nav-hair" role="tab" aria-controls="nav-hair" aria-selected="false">Hair</a>
+						<a class="nav-item nav-link" id="nav-eye-tab" data-toggle="tab" href="#nav-eye" role="tab" aria-controls="nav-eye" aria-selected="false">Eye Colour</a>
+
+						<a class="nav-item nav-link" id="nav-vagina-tab" data-toggle="tab" href="#nav-vagina" role="tab" aria-controls="nav-vagina" aria-selected="false">Removable Vagina</a>
+						<a class="nav-item nav-link" id="nav-stand-tab" data-toggle="tab" href="#nav-stand" role="tab" aria-controls="nav-stand" aria-selected="false">Stand Feet </a>
+
+						<a class="nav-item nav-link" id="nav-voice-tab" data-toggle="tab" href="#nav-voice" role="tab" aria-controls="nav-voice" aria-selected="false">Voice System </a>
+					
+					
+
+					</div>
+				</nav>
+				<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-skin" role="tabpanel" aria-labelledby="nav-skin-tab">
+						
+					<input type="checkbox" class="check" name="check1" id="check1" >
+						<label class="layout" for="check1"></label>
+							
+						<input type="checkbox" class="check" name="check2" id="check2" >
+						<label class="layout" for="check2"></label>
+							
+						<input type="checkbox" class="check" name="check3" id="check3" >
+						<label class="layout" for="check3"></label>
+
+
+
+
+
+
+						<div class="content-img-tab">
+							<div style="background:url(https://lumidolls.com/img/co/26.jpg)"><span>White</span></div>
+							<div style="background:url(https://lumidolls.com/img/co/27.jpg)"><span>Tan</span></div>
+							<div style="background:url(https://lumidolls.com/img/co/28.jpg)"><span>Natural</span></div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="nav-face" role="tabpanel" aria-labelledby="nav-face-tab">
+				2
+					</div>
+					<div class="tab-pane fade" id="nav-hair" role="tabpanel" aria-labelledby="nav-hair-tab">
+					3
+					</div>
+					<div class="tab-pane fade" id="nav-eye" role="tabpanel" aria-labelledby="nav-eye-tab">
+					4
+					</div>
+					
+						<div class="tab-pane fade" id="nav-vagina" role="tabpanel" aria-labelledby="nav-vagina-tab">
+				5
+					</div>
+
+					<div class="tab-pane fade" id="nav-stand" role="tabpanel" aria-labelledby="nav-stand-tab">
+				6
+					</div>
+					<div class="tab-pane fade" id="nav-voice" role="tabpanel" aria-labelledby="nav-voice-tab">
+				7
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ./Tabs -->
     </div> <!--row-->
   </div>
 
@@ -92,7 +158,7 @@ if ( post_password_required() ) {
 
 
 <div  id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-
+</div>
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
