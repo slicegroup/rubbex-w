@@ -1,0 +1,67 @@
+2019-05-31T16:26:05+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 227
+
+2019-05-31T16:26:30+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 227
+
+2019-05-31T16:26:32+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 227
+
+2019-05-31T16:42:38+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Rubbex/wp-includes/template.php(706): require()
+#1 /var/www/html/Rubbex/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/R...', false)
+#2 /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Rubbex/wp-includes/template-loader.php(77): include('/var/www/html/R...')
+#4 /var/www/html/Rubbex/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#5 /var/www/html/Rubbex/index.php(17): require('/var/www/html/R...')
+#6 {main}
+  thrown in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 109
+
+2019-05-31T16:43:00+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Rubbex/wp-includes/template.php(706): require()
+#1 /var/www/html/Rubbex/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/R...', false)
+#2 /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Rubbex/wp-includes/template-loader.php(77): include('/var/www/html/R...')
+#4 /var/www/html/Rubbex/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#5 /var/www/html/Rubbex/index.php(17): require('/var/www/html/R...')
+#6 {main}
+  thrown in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 109
+
+2019-05-31T16:43:05+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Rubbex/wp-includes/template.php(706): require()
+#1 /var/www/html/Rubbex/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/R...', false)
+#2 /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Rubbex/wp-includes/template-loader.php(77): include('/var/www/html/R...')
+#4 /var/www/html/Rubbex/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#5 /var/www/html/Rubbex/index.php(17): require('/var/www/html/R...')
+#6 {main}
+  thrown in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 109
+
+2019-05-31T16:44:21+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Rubbex/wp-includes/template.php(706): require()
+#1 /var/www/html/Rubbex/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/R...', false)
+#2 /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Rubbex/wp-includes/template-loader.php(77): include('/var/www/html/R...')
+#4 /var/www/html/Rubbex/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#5 /var/www/html/Rubbex/index.php(17): require('/var/www/html/R...')
+#6 {main}
+  thrown in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 109
+
+2019-05-31T16:44:25+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Rubbex/wp-includes/template.php(706): require()
+#1 /var/www/html/Rubbex/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/R...', false)
+#2 /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Rubbex/wp-includes/template-loader.php(77): include('/var/www/html/R...')
+#4 /var/www/html/Rubbex/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#5 /var/www/html/Rubbex/index.php(17): require('/var/www/html/R...')
+#6 {main}
+  thrown in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 109
+
+2019-05-31T17:11:28+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 184
+
+2019-05-31T17:11:44+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 184
+
+2019-05-31T17:12:17+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/Rubbex/wp-content/themes/Rubbex/woocommerce/content-single-product.php on line 167
+
