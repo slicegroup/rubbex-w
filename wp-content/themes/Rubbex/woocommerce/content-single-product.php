@@ -86,9 +86,14 @@ do_action( 'woocommerce_before_single_product_summary' );
       <div class="row">
         <div class="col-xs-12 ">
           <nav>
+
+
             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+		
+
+
               <a class="nav-item nav-link active" id="nav-skin-tab" data-toggle="tab" href="#nav-skin" role="tab"
-                aria-controls="nav-skin" aria-selected="true"> Skin tone</a>
+                aria-controls="nav-skin" aria-selected="true">Skin tone</a>
               <a class="nav-item nav-link" id="nav-face-tab" data-toggle="tab" href="#nav-face" role="tab"
                 aria-controls="nav-face" aria-selected="false">Face</a>
               <a class="nav-item nav-link" id="nav-hair-tab" data-toggle="tab" href="#nav-hair" role="tab"
@@ -126,10 +131,22 @@ do_action( 'woocommerce_before_single_product_summary' );
 
 
               <div class="content-img-tab">
-                <div style="background:url(https://lumidolls.com/img/co/26.jpg)"><span>White</span></div>
-                <div style="background:url(https://lumidolls.com/img/co/27.jpg)"><span>Tan</span></div>
-                <div style="background:url(https://lumidolls.com/img/co/28.jpg)"><span>Natural</span></div>
-              </div>
+  <?php
+                      /**
+                      * woocommerce_single_product_summary hook.
+                      *
+                      * @hooked woocommerce_template_single_title - 5
+                      * @hooked woocommerce_template_single_rating - 10
+                      * @hooked woocommerce_template_single_price - 10
+                      * @hooked woocommerce_template_single_excerpt - 20
+                      * @hooked woocommerce_template_single_add_to_cart - 30
+                      * @hooked woocommerce_template_single_meta - 40
+                      * @hooked woocommerce_template_single_sharing - 50
+                      * @hooked WC_Structured_Data::generate_product_data() - 60
+                      */
+                      do_action( 'woocommerce_single_product_summary' );
+                      ?>
+
             </div>
             <div class="tab-pane fade" id="nav-face" role="tabpanel" aria-labelledby="nav-face-tab">
               2
@@ -161,18 +178,4 @@ do_action( 'woocommerce_before_single_product_summary' );
 </div>
 <!--row-->
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div>
