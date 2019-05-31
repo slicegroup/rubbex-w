@@ -190,3 +190,8 @@ do_action( 'woocommerce_before_single_product_summary' );
 <!--row-->
 </div>
 <div>
+
+
+	<div class="container">
+  <?php echo do_shortcode('[product_page id="123"]'); ?>
+</div>

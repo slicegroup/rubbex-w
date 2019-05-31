@@ -15,8 +15,11 @@
  * @since 1.0
  * @version 1.0
  */
-?>  
-<div class="container">
-  <?php echo do_shortcode('[product id="34"]'); ?>
-</div>
+?>
+<section class="custom-dolls">
+	
+  <?php echo do_shortcode('[product_page id="34"]'); ?>
+</section>
+
+
 <?php get_footer(); ?>
