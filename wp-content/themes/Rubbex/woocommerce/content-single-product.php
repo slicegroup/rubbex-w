@@ -57,7 +57,7 @@ do_action( 'woocommerce_before_single_product_summary' );
       <div class="price-detail">
         <p class=""> <?php echo $product->get_price_html(); ?></p>
         <div class="btns animated wow fadeInUp ml-auto" data-wow-duration="5s">
-          <a class="btn-1" href="#">Put me to your liking</a>
+          <a href="#tabs" class="btn-1" href="#">Put me to your liking</a>
         </div>
       </div>
       <!-- contemnt tkee contenido doll -->
@@ -126,7 +126,9 @@ do_action( 'woocommerce_before_single_product_summary' );
               <label class="layout" for="check3"></label>
 
 
-
+              <div class="tab-pane fade" id="nav-face" role="tabpanel" aria-labelledby="nav-face-tab">
+              2
+            </div>
 
 
 
@@ -157,25 +159,34 @@ do_action( 'woocommerce_before_single_product_summary' );
             <div class="tab-pane fade" id="nav-eye" role="tabpanel" aria-labelledby="nav-eye-tab">
               4
             </div>
+          </div><!-- end1tabs-->
 
-            <div class="tab-pane fade" id="nav-vagina" role="tabpanel" aria-labelledby="nav-vagina-tab">
-              5
-            </div>
-
-            <div class="tab-pane fade" id="nav-stand" role="tabpanel" aria-labelledby="nav-stand-tab">
-              6
-            </div>
-            <div class="tab-pane fade" id="nav-voice" role="tabpanel" aria-labelledby="nav-voice-tab">
-              7
-            </div>
+          <div class="tab-pane fade" id="nav-face" role="tabpanel" aria-labelledby="nav-face-tab">
+            2
+          </div>
+          <div class="tab-pane fade" id="nav-hair" role="tabpanel" aria-labelledby="nav-hair-tab">
+            3
+          </div>
+          <div class="tab-pane fade" id="nav-eye" role="tabpanel" aria-labelledby="nav-eye-tab">
+            4
           </div>
 
+          <div class="tab-pane fade" id="nav-vagina" role="tabpanel" aria-labelledby="nav-vagina-tab">
+            5
+          </div>
+
+          <div class="tab-pane fade" id="nav-stand" role="tabpanel" aria-labelledby="nav-stand-tab">
+            6
+          </div>
+          <div class="tab-pane fade" id="nav-voice" role="tabpanel" aria-labelledby="nav-voice-tab">
+            7
+          </div>
         </div>
+
       </div>
     </div>
-  </section>
-  <!-- ./Tabs -->
-</div>
+  </div>
+</section>
 <!--row-->
 </div>
 <div>

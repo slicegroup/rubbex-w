@@ -45,6 +45,49 @@ $(function() {
 });
 
 
+// check
+
+// $('.subject-list').on('change', function() {
+// 	$('.subject-list').not(this).prop('checked', false).toggleClass("check")
+
+// });
+
+// $(document).ready(function(e){
+//     		$(".img-check").click(function(){
+// 				$(this).toggleClass("check");
+// 			});
+// 	});
+
+	$(document).ready(function(){
+    // add/remove checked class
+    $(".image-radio").each(function(){
+        if($(this).find('input[type="radio"]').first().attr("checked")){
+            $(this).addClass('image-radio-checked');
+        }else{
+            $(this).removeClass('image-radio-checked');
+        }
+    });
+
+    // sync the input state
+    $(".image-radio").on("click", function(e){
+        $(".image-radio").removeClass('image-radio-checked');
+        $(this).addClass('image-radio-checked');
+        var $radio = $(this).find('input[type="radio"]');
+        $radio.prop("checked",!$radio.prop("checked"));
+
+        e.preventDefault();
+    });
+});
+
+
+$(function() {
+  $('#ex').hover(function() {
+    $(this).fadeTo(400,.6);
+  }, function() {
+    $(this).fadeTo(400,1);
+  });
+});
+
 	/*------------------
 		Background Set
 	--------------------*/
