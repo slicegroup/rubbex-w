@@ -5,7 +5,7 @@
             <div class="main container">
                 <div class="active" id="prueba">
 
-                     <div class="slider slider-for">
+                   <div class="slider slider-for">
                     <!-- slider -->
                      <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>
                          <?php $loop = new WP_Query( $args ); ?>
@@ -22,10 +22,8 @@
                         </div>
                     </div>
                     <?php endif; endwhile; ?>
-                    
-
                 </div>
-                </div>
+            </div>
                 <div class="slider slider-for">
                     <!-- slider -->
                      <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>
