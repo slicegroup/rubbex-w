@@ -48,7 +48,7 @@
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="<?php bloginfo('url'); ?>">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -62,18 +62,15 @@
                         <li class="nav-item" style="margin-left: 20px;">
                             <a class="nav-link damn-search 
                             " href="#">
-                            <form action="">
-                                
-                           
+                            <form action="<?php echo esc_url( $action_link ) ?>" id="frm_search_form" method="get" class="searchform">                
                             <div id="custom-search">
-                                    <input type="text" name="search" class="search-query" placeholder="Search" />
+                                    <input type="text" name="s" class="search-query" placeholder="Search" />
                                     <button type="button">
                                             <i class='bx bx-search-alt'></i>
                                     </button>
-                                    <input type="submit" value="Submit" style="display: none;">
+                                    <input type="submit" value="<?php echo esc_attr( FrmAppHelper::get_param( 'frm_search', '', 'get', 'sanitize_text_field' ) ); ?>" style="display: none;">
                                 </div>
                                   </form> 
-
                             </a>
                         </li>
                         <li class="nav-item">
