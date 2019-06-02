@@ -996,7 +996,7 @@ font-family: 'Poppins', sans-serif;
 		cursor: pointer;
   }
   #prueba{
-	/* background: rebeccapurple; */
+	background: white;
     width: 170px!important;
     height: 260px;
     background-size: cover!important;

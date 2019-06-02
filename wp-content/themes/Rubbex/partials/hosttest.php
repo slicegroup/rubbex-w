@@ -5,8 +5,26 @@
             <div class="main container">
                 <div class="active" id="prueba">
 
-                   <!--   <div class="miniaturas"style="background:url(https://eldiariony.files.wordpress.com/2017/03/aki-dolls1a1.jpg?quality=80&strip=all&strip=all)">
-			         </div>  -->
+                     <div class="slider slider-for">
+                    <!-- slider -->
+                     <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>
+                         <?php $loop = new WP_Query( $args ); ?>
+                         <?php while ( $loop->have_posts() ) : $loop->the_post(); if ( get_field( 'hottest' ) == 1 ):global $product;  ?>
+                    <div class="content-best">
+                        <div class="row">
+                           
+                           
+                            <div class="col-md-12  animated wow fadeInRight " data-wow-duration="3s">
+
+                                <div class="img-best ml-md-auto" style="background:url(<?php echo get_the_post_thumbnail_url(); ?>); width: 100% !important; height: 253px; background-size: cover !important;"> </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <?php endif; endwhile; ?>
+                    
+
+                </div>
                 </div>
                 <div class="slider slider-for">
                     <!-- slider -->

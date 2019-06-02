@@ -128,14 +128,16 @@ function Banner() {
 }
 add_action( 'init', 'Banner', 0 );
 
+
+
 // Register Custom Post Type
-function banner_advertising() {
+function advertising() {
 
 	$labels = array(
 		'name'                  => _x( 'advertising', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'advertising', 'Post Type Singular Name', 'apk' ),
 		'menu_name'             => __( 'Advertising', 'apk' ),
-		'name_admin_bar'        => __( 'advertising', 'apk' ),
+		'name_admin_bar'        => __( 'Post Type', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
@@ -183,6 +185,9 @@ function banner_advertising() {
 	register_post_type( 'advertising', $args );
 
 }
+add_action( 'init', 'advertising', 0 );
+
+
 
 //Compatibilidad con galerías a partir de WooCommerce 3.0>
 add_action( 'after_setup_theme', 'yourtheme_setup' );
