@@ -27,6 +27,7 @@
                 </div>
             </div>
                 <div class="slider slider-for">
+                    <!-- slider -->
 
                      <?php $args = array( 'post_type' => 'product'); ?>
 

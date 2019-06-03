@@ -1274,3 +1274,36 @@ font-size: 35px;
 	background: -webkit-linear-gradient(rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
 	background: linear-gradient(-30deg, rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
 }
+
+/* abot */
+.dolls{
+	background:url('<?php echo get_template_directory_uri();?>/assets/img/doll.png');
+}
+.dropdown:hover>.dropdown-menu {
+	display: block;
+	cursor: pointer;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+		pointer-events: none;
+
+}
+.dropdown-menu {
+
+	background-color: #ffffffeb;
+	border: none;
+
+}
+.dropdown-item {
+
+	color: #161616;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+	background-color: #d6276647;
+}
+a:not([href]):not([tabindex]) {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
