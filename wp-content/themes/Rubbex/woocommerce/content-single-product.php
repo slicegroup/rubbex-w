@@ -48,7 +48,6 @@ if ( post_password_required() ) {
 do_action( 'woocommerce_before_single_product_summary' );
 ?>
 
-Www1010*
     <div class="flex-control-thumbs"></div>
   </div>
   <!--col2-->
