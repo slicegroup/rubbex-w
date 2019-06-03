@@ -100,8 +100,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?php bloginfo('url') ?>/my-account"><i class='bx bx-user'  ></i></a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="<?php bloginfo('url') ?>/cart">	<i class='bx bx-cart' '  ></i></a>
+                        </li> -->
+                        <li class="nav-item nav-link ">
+                            <!-- <a class="nav-link" href="#"></a> -->
+                            <div class="dropdown">
+                                <a class=""  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class='bx bx-cart' '  ></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">lorem</a>
+                                    <a class="dropdown-item" href="#">FAQs</a>
+                                </div>
+                            </div>
                         </li>
 
                         <!-- <li class="nav-item dropdown">

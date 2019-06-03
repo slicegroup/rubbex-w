@@ -15,27 +15,5 @@
   </div>
   <?php  get_template_part('partials/gallery'); ?>
 
-  <style>
-  .dolls{
-    width: 100%;
-    height: 330px;
-    background-size: 64%!important;
-    background-repeat: no-repeat!important;
-    margin: 0 50px;
-  }
-  .content-dolls{
-    box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
-    margin-bottom:50px;
-    padding-top: 20px;
-    border-radius: 10px;
-  }
-  .content-p-dolls{
-    color: #602052;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size:18px;
-  }
-  .
-  </style>
+
 <?php get_footer(); ?>
