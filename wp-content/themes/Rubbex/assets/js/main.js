@@ -215,6 +215,7 @@ $('.slider-for').slick({
 	dots: false,
 	focusOnSelect: true,
 	autoplay:true,
+	speed: 5000,
 	
   });
  
