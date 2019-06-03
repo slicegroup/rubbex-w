@@ -7,7 +7,7 @@
 
                    <div class="slider slider-for">
                     <!-- slider -->
-                     <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>
+                     <?php $args = array( 'post_type' => 'product'); ?>
                          <?php $loop = new WP_Query( $args ); ?>
                          <?php while ( $loop->have_posts() ) : $loop->the_post(); if ( get_field( 'hottest' ) == 1 ):global $product;  ?>
                     <div class="content-best">
@@ -26,7 +26,7 @@
             </div>
                 <div class="slider slider-for">
                     <!-- slider -->
-                     <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>
+                     <?php $args = array( 'post_type' => 'product'); ?>
                          <?php $loop = new WP_Query( $args ); ?>
                          <?php while ( $loop->have_posts() ) : $loop->the_post(); if ( get_field( 'hottest' ) == 1 ):global $product;  ?>
                     <div class="content-best">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="slider slider-nav animated wow fadeInLeft" data-wow-duration="3.5s">
                     <!-- miiniaturas -->
-                       <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4);?>
+                       <?php $args = array( 'post_type' => 'product');?>
                          <?php $loop = new WP_Query( $args ); ?>
                          <?php while ( $loop->have_posts() ) : $loop->the_post();  if ( get_field( 'hottest' ) == 1 ): global $product; ?>
                     <div class="">

@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
         <header class="header-sen">
             <nav class="navbar navbar-expand-lg fixed-top header-2" style=" box-shadow: 0px 0px 9px #00000012!important;">
                 <a href="<?php bloginfo('url'); ?>" id="change" class="site-logo">
@@ -51,7 +51,7 @@
 								<a class="dropdown-item" href="#">Another action</a>
 								<a class="dropdown-item" href="#">Something else here</a>
 							  </div>
-							</li> -->
+							</li> 
                     </ul>
 
                 </div>
@@ -59,6 +59,6 @@
 
             <!--	<div class="search-switch">
 				<img src="img/search-icon.png" alt="">
-			</div>-->
+			</div>
         </header>
-    </div>
+    </div> -->
