@@ -1,8 +1,15 @@
 <div class="publicidad container">
-  <div class="publiciad-img" style="background:url(http://static.t13.cl/images/sizes/1200x675/1521810006-100539881mueca1.jpg)"></div>
-  <div class="publiciad-img" style="background:url(https://cypes.grupoeurohispana.com/img/subcat/49/subcat49-foto5.jpg)"></div>
-  <div class="publiciad-img" style="background:url(http://static.t13.cl/images/sizes/1200x675/1521810006-100539881mueca1.jpg)"></div>
-  <div class="publiciad-img" style="background:url(https://www.critica.com.pa/sites/default/files/imagenes/2018/04/09/actualidad.png)"></div>
+
+   <?php $args = array( 'post_type' => 'advertising'); ?>
+
+   <?php $loop = new WP_Query( $args ); ?>
+  <?php while ( $loop->have_posts() ) : $loop->the_post(); if ( get_field( 'horizontal_banner' ) == 1 ):  ?>
+
+       <div class="publiciad-img" style="background:url(<?php the_field( 'banner_image' ); ?>)"></div>
+
+ <?php endif; endwhile; ?>
+  
+
 
 </div>
 
