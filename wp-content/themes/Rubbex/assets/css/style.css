@@ -1174,7 +1174,8 @@ font-size: 35px;
 .content-doll p{
 	font-weight: 800;
     margin-top: 0;
-    margin-bottom: 0;
+		margin-bottom: 0;
+		font-size: 14px;
 }
   
   @-webkit-keyframes criss-cross-left {
