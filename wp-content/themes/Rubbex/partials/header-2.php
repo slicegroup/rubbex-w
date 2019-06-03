@@ -27,15 +27,14 @@
                             <a class="nav-link damn-search 
                             " href="#">
                             <form action="<?php echo esc_url( $action_link ) ?>" id="frm_search_form" method="get" class="searchform">                
-                                <div id="custom-search">
-                                        <input type="text" name="s" class="search-query" placeholder="Search" />
-                                        <button type="button">
-                                                <i class='bx bx-search-alt'></i>
-                                        </button>
-                                        <input type="submit" value="<?php echo esc_attr( FrmAppHelper::get_param( 'frm_search', '', 'get', 'sanitize_text_field' ) ); ?>" style="display: none;">
-                                    </div>
-                             </form> 
-
+                            <div id="custom-search">
+                                    <input type="text" name="s" class="search-query" placeholder="Search" />
+                                    <button type="button">
+                                            <i class='bx bx-search-alt'></i>
+                                    </button>
+                                    <input type="submit" value="<?php echo esc_attr( FrmAppHelper::get_param( 'frm_search', '', 'get', 'sanitize_text_field' ) ); ?>" style="display: none;">
+                                </div>
+                                  </form> 
                             </a>
                         </li>
                         <li class="nav-item">

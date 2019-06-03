@@ -334,3 +334,8 @@ display: block !important;
 .none-input input[type=number]{
   display: none !important;
 }
+ input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  opacity: 0!important;
+}
