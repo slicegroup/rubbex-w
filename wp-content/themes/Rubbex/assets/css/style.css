@@ -1274,3 +1274,8 @@ font-size: 35px;
 	background: -webkit-linear-gradient(rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
 	background: linear-gradient(-30deg, rgba(214, 39, 102, 0.65), rgba(63, 31, 77, 0.83));
 }
+
+/* abot */
+.dolls{
+	background:url('<?php echo get_template_directory_uri();?>/assets/img/doll.png');
+}
