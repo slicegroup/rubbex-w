@@ -194,11 +194,11 @@ $(function() {
 
 
 // slick
-// $('.titulo').slick({
-// 	infinite: true,
-// 	slidesToShow: 3,
-// 	slidesToScroll: 3
-//   });
+$('.publicidad').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1
+  });
 
 $('.slider-for').slick({
 	slidesToShow: 1,
@@ -209,10 +209,10 @@ $('.slider-for').slick({
 	asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-	slidesToShow: 5.8,
+	slidesToShow: 4,
 	slidesToScroll: 1,
 	asNavFor: '.slider-for',
-	dots: true,
+	dots: false,
 	focusOnSelect: true,
 	autoplay:true,
 	

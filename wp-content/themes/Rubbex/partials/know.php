@@ -2,7 +2,7 @@
         <h1 class="titulos cssanimation leFadeIn sequence" data-wow-iteration="5" data-wow-duration="0.15s">Most Requested Companions</h1>
         <div class="container">
             <div class="row">
-                <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 3 ); ?>
+                <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4 ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
 
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
