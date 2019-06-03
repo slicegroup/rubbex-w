@@ -16,7 +16,7 @@
  * @version 1.0
  */
 ?>
-<section class="custom-dolls">
+<section class="custom-dolls" style="margin-top: 60px;">
 	
   <?php echo do_shortcode('[product_page id="34"]'); ?>
 </section>

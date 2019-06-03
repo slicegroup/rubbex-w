@@ -329,3 +329,8 @@ display: block !important;
 
   border-radius: 10px!important;
 }
+
+
+.none-input input[type=number]{
+  display: none !important;
+}

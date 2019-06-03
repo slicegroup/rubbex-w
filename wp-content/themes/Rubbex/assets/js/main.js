@@ -97,13 +97,13 @@ $(function() {
 	});
 
 	
-	$('.miniaturas').click(function() {
+/*	$('.miniaturas').click(function() {
 	
 		var bm = $(this).attr('style')
 		$('#prueba').attr('style', bm)
   
 	});
-
+*/
 				 
 	$(function(){
         $(window).scroll(function(){

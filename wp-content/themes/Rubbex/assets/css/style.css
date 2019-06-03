@@ -823,8 +823,6 @@ display: flex;
 #frm_form_5_container textarea{
     border: none!important;
     border-bottom: 1px solid #fff!important;
-    padding: 10px!important;
-    display: block!important;
     width: 300px!important;
     background: transparent!important;
 }
@@ -840,10 +838,8 @@ display: flex;
 }
 
 #frm_form_5_container label {
-    position: absolute!important;
+    
     color: #fff!important;
-    top: 12px!important;
-    left: 0!important;
 	transition: 0.2s ease all!important;
 	font-size: 13px!important;
 
@@ -996,7 +992,7 @@ font-family: 'Poppins', sans-serif;
 		cursor: pointer;
   }
   #prueba{
-	/* background: rebeccapurple; */
+	background: white;
     width: 170px!important;
     height: 260px;
     background-size: cover!important;
