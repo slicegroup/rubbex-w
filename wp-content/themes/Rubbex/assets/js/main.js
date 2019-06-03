@@ -108,7 +108,7 @@ $(function() {
 	$(function(){
         $(window).scroll(function(){
 			if (screen.width >= 600) {
-            if ($(window).scrollTop() > 30)
+            if ($(window).scrollTop() > 40)
             {
 				$(".navbar").addClass("nav-s");
 				$(".logo-w").addClass("quit");

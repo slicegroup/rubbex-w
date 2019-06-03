@@ -339,3 +339,63 @@ display: block !important;
   padding: 0;
   opacity: 0!important;
 }
+
+.car-home .actions{
+  display: none!important;
+}
+.car-home .cart-collaterals{
+  display: none!important;
+}
+.nav-car .dropdown-menu {
+  right: 0!important;
+  left: initial!important;
+  min-width: 35rem!important;
+}
+.nav-car .woocommerce table.shop_table {
+    border: none;
+}
+.nav-car thead{
+  display: none;
+}
+.nav-car .woocommerce table.shop_table td {
+  font-size: 12px!important;
+}
+.product-name a{
+  color: #602052!important
+}
+.nav-car .woocommerce a.remove {
+  display: block;
+  font-size: 1.5em;
+  height: 25px!important;
+  width: 25px!important;
+  align-items: center!important;
+  display: flex!important;
+  justify-content: center!important;
+  line-height: 1;
+  border-radius: 100%;
+  color: #d62766!important;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  background: white!important;
+  box-shadow: 0 5px 16px rgba(0,0,0,.07)!important;
+}
+.nav-car .woocommerce a.remove:hover {
+  background: #d62766!important;
+}
+.product-thumbnail img{
+  width: 80px!important;
+  height: 80px!important;
+  object-fit: cover!important;
+  object-position: top!important;
+  border-radius: 10px;
+}
+.nav-car .woocommerce table.shop_table td {
+  border-bottom: 1px dashed #dcdcdc!important;
+}
+.nav-car .woocommerce table.shop_table td {
+  border-top: none!important;
+}
+.nav-car .woocommerce table.shop_table td {
+  padding: 9px 15px!important;
+}
