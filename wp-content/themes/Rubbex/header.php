@@ -59,11 +59,29 @@
                             <a class="nav-link" href="<?php bloginfo('url') ?>/index.php/about/">About</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Dolls</a>
+                        <li class="nav-item nav-link ">
+                            <!-- <a class="nav-link" href="#"></a> -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Companions
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Featured Companion</a>
+                                    <a class="dropdown-item" href="#">Build your own</a>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Help & Info</a>
+                        <li class="nav-item nav-link ">
+                            <!-- <a class="nav-link" href="#"></a> -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help & Info
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Companion Care</a>
+                                    <a class="dropdown-item" href="#">FAQs</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item" style="margin-left: 20px;">
                             <a class="nav-link damn-search 
@@ -116,11 +134,29 @@
                         <li class="nav-item">
                         <a class="nav-link" href="<?php bloginfo('url') ?>/index.php/about/">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Dolls</a>
+                        <li class="nav-item nav-link ">
+                            <!-- <a class="nav-link" href="#"></a> -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Companions
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Featured Companion</a>
+                                    <a class="dropdown-item" href="#">Build your own</a>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Help & Info</a>
+                        <li class="nav-item nav-link ">
+                            <!-- <a class="nav-link" href="#"></a> -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help & Info
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Companion Care</a>
+                                    <a class="dropdown-item" href="#">FAQs</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item" style="margin-left: 20px;">
                             <a class="nav-link damn-search 
