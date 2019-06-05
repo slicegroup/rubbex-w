@@ -30,8 +30,7 @@
 </head>
 <body>
     <?php $current_file =  $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-
-    ?> 
+           ?> 
     <!--Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -67,7 +66,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" href="#">Featured Companion</a>
-                                    <a class="dropdown-item" href="#">Build your own</a>
+                                    <a class="dropdown-item" href="<?php echo bloginfo('url') ?>/custom">Build your own</a>
 
                                 </div>
                             </div>
@@ -81,7 +80,7 @@
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" href="#">Companion Care</a>
                                     <a class="dropdown-item" href="#">FAQs</a>
-                                 
+
                                 </div>
                             </div>
                         </li>
@@ -144,7 +143,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" href="#">Featured Companion</a>
-                                    <a class="dropdown-item" href="#">Build your own</a>
+                                    <a class="dropdown-item" href="<?php echo bloginfo('url') ?>/custom">Build your own</a>
                                 </div>
                             </div>
                         </li>
