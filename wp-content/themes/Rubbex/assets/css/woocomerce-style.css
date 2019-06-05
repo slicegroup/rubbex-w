@@ -189,7 +189,7 @@
   height: 560px;
   overflow-y: overlay;
   justify-content: center;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   border-radius: 10px;
   
@@ -398,4 +398,34 @@ display: block !important;
 }
 .nav-car .woocommerce table.shop_table td {
   padding: 9px 15px!important;
+}
+.nav-car .dropdown-menu::before {
+  content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -5px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    z-index: 9;
+    right: 4px;
+
+}
+ .dropdown-menu::before {
+  content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -5px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    z-index: 9;
+    right: 20px;
+    
+
+}
+.onsale{
+      display: none;
 }
